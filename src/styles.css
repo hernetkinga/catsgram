@@ -1,0 +1,14 @@
+@import '~normalize.css';
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css"; 
+
+html { background-color: #E5E5E5; }
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+*::before, *::after {
+    box-sizing: border-box;
+  }
+
+.mat-progress-spinner circle, .mat-spinner circle {
+    stroke: #FF868E;
+    }
