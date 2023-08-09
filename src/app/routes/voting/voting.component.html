@@ -1,0 +1,51 @@
+<app-topbar></app-topbar>
+<section class="vote_sect">
+    <div class="tabs_bar">
+        <app-back-nav-btn></app-back-nav-btn>
+        <div class="page_name_cont">
+          <p class="page_name">VOTING</p>
+        </div>
+    </div>
+    
+    <div class="vote_img_cont" *ngIf="loadedData.length > 0;  else downloader">
+        <ng-container *ngFor="let data of loadedData">
+            <app-cat-breed [url]="data.url"></app-cat-breed>
+        </ng-container>
+        <ul class="voting_btns">
+            
+            <li class="like_cont" (click)="onVoteBtnClicked(1)">
+              <img class="like_btn" src='./assets/icons/like-30.svg' alt="likes_image">
+            </li>
+
+            <li class="fav_cont" (click)="isBtnReady && onFavBtnClicked()">
+                <ng-container *ngIf="isFavourite; else defaultImg">
+                    <img class="fav_btn_active" src='./assets/icons/fav-filled-white-30.svg' alt="favourites_image">
+                </ng-container>
+                <ng-template #defaultImg>
+                    <img class="fav_btn" src='./assets/icons/fav-30.svg' alt="favourites_image">
+                </ng-template>
+            </li>
+
+            <li class="dislike_cont" (click)="onVoteBtnClicked(0)">
+              <img class="dislike_btn" src='./assets/icons/dislike-30.svg' alt="dislikes_image">
+            </li>
+          </ul>
+    </div>
+
+    <ng-template #downloader>
+        <div class="progress_spinner_cont">
+          <app-progress-spinner></app-progress-spinner>
+        </div>
+    </ng-template>
+
+    <div class="logs">
+        <ng-container *ngFor='let log of logs.reverse()'>
+            <div class="new_log">
+                <div class="time_cont">
+                    <p class="time">{{log.currentTime}}</p>
+                </div>
+                <p class="log_msg">Image ID: <b style="color: #1D1D1D;">{{log.imageID}}</b> was {{log.action}} {{log.place}}</p>
+            </div>
+        </ng-container> 
+    </div>
+    

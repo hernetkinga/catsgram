@@ -1,0 +1,162 @@
+.info_sect {
+    height: max-content;
+    margin-top: 10px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.tabs_bar {
+    display:flex;
+}
+
+.page_name_cont {
+    width: 156px;
+    height: 40px;
+    background: #FBE0DC;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.page_name {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #FF868E;
+    margin: 5px 30px;
+}
+
+.breed_id_cont {
+    width: max-content;
+    height: 40px;
+    background: #FF868E;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.breed_id {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 2px;    
+    color: #FFFFFF;
+    margin: 5px 30px;
+}
+
+.breed_content {
+    width: 100%;
+    height: max-content;
+}
+
+.info_img_cont {
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 100%;
+    height: 460px;
+}
+
+.info_cont {
+    box-sizing: border-box;
+    width: 100%;
+    height: max-content;
+    border: 2px solid #FBE0DC;
+    border-radius: 20px;
+    margin-top: 51px;
+    position: relative;
+}
+
+.name_cont {
+    position: absolute;
+    width: max-content;
+    height: 62px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -31px;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+.breed_name {
+    width: max-content;
+    height: 52px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 52px;
+    color: #1D1D1D;
+    margin: 5px 40px;
+}
+
+.breed_description {
+    max-width: 100%;
+    margin-top: 26px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 29px;
+    color: #8C8C8C;
+}
+
+.breed_info {
+    margin: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info_label {
+    width: 270px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    color: #1D1D1D;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.info_value {
+    width: 270px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #8C8C8C;
+    margin: 0;
+}
+
+.no_items_headline {
+    margin-top: 20px;
+    background: #F8F8F7;
+    border-radius: 10px;
+    width: 100%;
+    height: 60px;
+}
+
+.no_items_headline_text {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #8C8C8C;
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+

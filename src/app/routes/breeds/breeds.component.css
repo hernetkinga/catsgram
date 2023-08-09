@@ -1,0 +1,296 @@
+.breeds_sect {
+    height: auto;
+    margin-top: 10px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.tabs_bar {
+    display:flex;
+    justify-content: space-between;
+}
+
+.tabs_bar_text {
+    width: max-content;
+    height: 24px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8C8C8C;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: 10px;
+}
+
+.dropdown_img {
+    width: 12px;
+    height: 12px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-right: 10px;
+}
+
+.page_name_cont {
+    width: 156px;
+    height: 40px;
+    background: #FF868E;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.page_name {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    margin: 5px 30px;
+}
+
+.reload_data {
+    width: auto;
+    height: 40px;
+    background: #F8F8F7;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    margin-left: 10px;
+}
+
+.reload_data_btn {
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    filter:  brightness(0) saturate(100%) invert(67%) sepia(0%) saturate(1%) hue-rotate(168deg) brightness(84%) contrast(84%)
+}
+
+.reload_data:hover {
+    border: 2px solid #FBE0DC;
+}
+
+.reload_data:hover > .reload_data_btn {
+    filter: brightness(0) saturate(100%) invert(61%) sepia(15%) saturate(1491%) hue-rotate(307deg) brightness(101%) contrast(100%);
+}
+
+.dropdown_breeds_block {
+    margin-left: 10px;
+    width: 40%;
+    height: 42px;
+}
+
+
+.dropdown_limit_block {
+    margin-left: 10px;
+    width: 156px;
+    height: 42px;
+}
+
+
+.dropbtn_breeds {
+    width: 100%;
+    height: 100%;
+    background: #F8F8F7;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    border: 2px solid transparent;
+}
+
+.dropbtn_breeds:hover {
+    border: 2px solid #FBE0DC;
+}
+
+.dropbtn_limit {
+    width: 100%;
+    height: 100%;
+    background: #F8F8F7;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid transparent;
+}
+
+.dropbtn_limit:hover {
+    border: 2px solid #FBE0DC;
+}
+
+.dropdown_breeds {
+    max-height: 300px;
+    width: max-content;
+    display: block;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 226px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 7px;
+}
+
+.dropdown_limit {
+    width: max-content;
+    height: max-content;
+    display: block;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: max-content;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 20px;
+    padding: 10px 10px 0 10px;
+    margin-top: 7px;
+}
+
+.breed_btn {
+    display: block;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8C8C8C;
+    border: none;
+}
+
+.breed_btn:hover {
+    color: #FF868E;
+}
+
+.limit_btn {
+    display: block;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8C8C8C;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.limit_btn:hover {
+    color: #FF868E;
+}
+
+.grid_parent {
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.progress_spinner_cont {
+    height: auto;
+    padding: 45%;
+}
+
+.descending_sort {
+    width: auto;
+    height: 40px;
+    background: #F8F8F7;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    margin-left: 10px;
+}
+
+.desc_sort_btn {
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.descending_sort:hover {
+    border: 2px solid #FBE0DC;
+}
+
+.descending_sort:hover > .desc_sort_btn {
+    filter: brightness(0) saturate(100%) invert(61%) sepia(15%) saturate(1491%) hue-rotate(307deg) brightness(101%) contrast(100%);
+}
+
+.ascending_sort {
+    width: auto;
+    height: 40px;
+    background: #F8F8F7;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    margin-left: 10px;
+}
+
+.asc_sort_btn {
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.ascending_sort:hover {
+    border: 2px solid #FBE0DC;
+}
+
+.ascending_sort:hover > .asc_sort_btn {
+    filter: brightness(0) saturate(100%) invert(61%) sepia(15%) saturate(1491%) hue-rotate(307deg) brightness(101%) contrast(100%);
+}
+
+
+.cat_img_cont {
+    position: relative;
+}
+
+.cat_img_hover {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 134, 142, 0.6);
+    opacity: 0.6;
+    display: none;
+    position: relative;
+}
+
+.cat_img_cont:hover .cat_img_hover {
+    position: absolute;
+    display: block;
+    border-radius: 20px;
+}
+
+.breed_name {
+    width: calc(100% - 20px);
+    height: 34px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: none;
+    border: 2px solid transparent;
+}
+
+.breed_name:hover {
+    border: 2px solid #FF868E;
+}
+
+
+.cat_img_cont:hover .breed_name {
+    display: block;
+}
+
+.breed_text {
+    width: 100%;
+    height: 100%;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FF868E;
+    margin-top: 2px;
+    text-align: center;
+}
+
+

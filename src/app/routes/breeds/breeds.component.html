@@ -1,0 +1,71 @@
+<app-topbar></app-topbar>
+<section class="breeds_sect">
+    <div class="tabs_bar">
+        <app-back-nav-btn></app-back-nav-btn>
+        <div class="page_name_cont">
+          <p class="page_name">BREEDS</p>
+        </div>
+        <div class="reload_data" (click)="searchData()">
+            <img class="reload_data_btn" src='./assets/icons/update-20.svg' alt="back_image">
+        </div>
+        <div class="dropdown_breeds_block" appClickOutside (clickOutside)="clickedOutsideDropbars('categoriesDropbar')">
+            <button (click)="openCloseDropbars('categoriesDropbar')" class="dropbtn_breeds">
+                <span class="tabs_bar_text">{{currentCategory}}</span>
+                <img class="dropdown_img" src='./assets/icons/dropdown.svg' alt="dropdown_image">
+            </button>
+            <div #dropdown_breeds class="dropdown_breeds" *ngIf="isCategoriesDropdownOpen">
+                <button (click)="chooseCategory('All breeds')" class="breed_btn">All breeds</button>
+                <ng-container *ngFor="let category of categories">
+                    <button (click)="chooseCategory(category)" class="breed_btn">{{category.name}}</button>
+                </ng-container>
+            </div>
+        </div>
+        <div class="dropdown_limit_block" appClickOutside (clickOutside)="clickedOutsideDropbars('limitDropbar')">
+            <button (click)="openCloseDropbars('limitDropbar')" class="dropbtn_limit">
+                <ng-container *ngIf="loadedData.length > 0; else alt_limit_counter">
+                    <span class="tabs_bar_text">Limit: {{showedData.length}}</span> 
+                    <img class="dropdown_img" src='./assets/icons/dropdown.svg' alt="dropdown_image">
+                </ng-container>
+                <ng-template #alt_limit_counter>
+                    <span class="tabs_bar_text">Limit: </span> 
+                </ng-template>
+            </button>
+            <div #dropdown_limit  class="dropdown_limit" *ngIf="isLimitDropdownOpen">
+                <button (click)="filterByLimits(5)" class="limit_btn">5 items per page</button>
+                <button (click)="filterByLimits(10)" class="limit_btn">10 items per page</button>
+                <button (click)="filterByLimits(15)" class="limit_btn">15 items per page</button>
+                <button (click)="filterByLimits(20)" class="limit_btn">20 items per page</button>
+            </div>
+        </div>
+        <div class="descending_sort" (click)="sort('descending')">
+            <img class="desc_sort_btn" src='./assets/icons/sort-20.svg' alt="back_image">
+        </div>
+        <div class="ascending_sort" (click)="sort('ascending')">
+            <img class="asc_sort_btn" src='./assets/icons/soft-revert-20.svg' alt="back_image">
+        </div>
+        
+    </div>
+    <ng-container *ngIf="loadedData.length > 0;  else downloader">
+        <div class="grid_parent">
+          <div class="grid_container">
+            <ng-container *ngFor="let data of showedData; index as i">
+                <div class="cat_img_cont {{ get_grid_class(i) }}">
+                    <div class="hover_cont" routerLink="/info" (click)="shareData(data)">
+                        <div class="cat_img_hover"></div>
+                        <div class="breed_name">
+                            <p class="breed_text">{{data.breeds[0].name}}</p>
+                        </div>
+                    </div>
+                    
+                    <app-cat-breed [url]="data.url" class="cat_img"></app-cat-breed>
+                    
+                </div>
+            </ng-container>
+          </div>
+        </div>
+    </ng-container>
+    <ng-template #downloader>
+        <div class="progress_spinner_cont">
+          <app-progress-spinner></app-progress-spinner>
+        </div>
+    </ng-template>

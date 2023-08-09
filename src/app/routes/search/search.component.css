@@ -1,0 +1,105 @@
+.search_sect {
+    height: auto;
+    margin-top: 10px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.tabs_bar {
+    display:flex;
+}
+
+.page_name_cont {
+    width: 156px;
+    height: 40px;
+    background: #FF868E;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.page_name {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    margin: 5px 30px;
+}
+
+
+.search_headline {
+    margin-top: 20px;
+    width: max-content;
+    height: 29px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: #8C8C8C;
+}
+
+.progress_spinner_cont {
+    height: auto;
+    padding: 45%;
+}
+
+.grid_parent {
+    overflow: hidden;
+}
+
+.cat_img_cont {
+    position: relative;
+}
+
+.cat_img_hover {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 134, 142, 0.6);
+    opacity: 0.6;
+    display: none;
+    position: relative;
+}
+
+.cat_img_cont:hover .cat_img_hover {
+    position: absolute;
+    display: block;
+    border-radius: 20px;
+}
+
+.breed_name {
+    width: calc(100% - 20px);
+    height: 34px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: none;
+    
+}
+
+.cat_img_cont:hover .breed_name {
+    display: block;
+}
+
+.breed_text {
+    width: 100%;
+    height: 100%;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FF868E;
+    margin-top: 5px;
+    text-align: center;
+}
+
+
+
+

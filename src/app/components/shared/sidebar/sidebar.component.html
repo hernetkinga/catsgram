@@ -1,0 +1,40 @@
+<section class="sidebar">
+    <div class="sidebar_text_fields">
+        <h1 class="sidebar_headline_1">Hi, Cat lover!</h1>
+        <p class="sidebar_headline_2">Welcome to Catsgram - an instagram for cats!</p>
+        <h3 class="sidebar_headline_3">Let's start exploring!</h3>
+    </div>
+    <ul class="sidebar_links">
+    <li class="sidebar_link_container">
+        <a [routerLink]="'/voting'" class="sidebar_link" routerLinkActive="active_link" [routerLinkActiveOptions]="{exact:true}">
+            <div class="sidebar_btn_container">
+                <div class="sidebar_image_container">
+                    <img class="sidebar_nav_image" src='./assets/images/vote-table.svg' alt="voting_image">
+                </div>    
+                <div class="sidebar_label_container">VOTING</div>
+            </div>
+        </a>
+    </li>
+    <li class="sidebar_link_container">
+        <a  [routerLink]="'/breeds'" class="sidebar_link" routerLinkActive="active_link" [routerLinkActiveOptions]="{exact:true}">
+            <div class="sidebar_btn_container">
+                <div class="sidebar_image_container">
+                    <img class="sidebar_nav_image" src='./assets/images/pet-breeds.svg' alt="breeds_image">
+                </div>    
+                <div class="sidebar_label_container">BREEDS</div>
+            </div>
+        </a>
+    </li>
+    <li class="sidebar_link_container">
+        <a [routerLink]="'/gallery'" class="sidebar_link" routerLinkActive="active_link" [routerLinkActiveOptions]="{exact:true}" >
+            <div class="sidebar_btn_container">
+                <div class="sidebar_image_container">
+                    <img class="sidebar_nav_image" src='./assets/images/images-search.svg' alt="gallery_image">
+                </div>    
+                <div class="sidebar_label_container">GALLERY</div>                        
+            </div>
+        </a>
+    </li>
+    </ul>
+</section>
+

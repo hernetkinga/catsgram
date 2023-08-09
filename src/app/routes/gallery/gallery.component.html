@@ -1,0 +1,219 @@
+<section class="gallery_menu" *ngIf="!isUploadMenuVisible, else upload_menu">
+    <app-topbar></app-topbar>
+    <section class="gallery_sect">
+        <div class="tabs_bar">
+            <div class="common_elmt">
+                <app-back-nav-btn></app-back-nav-btn>
+                <div class="page_name_cont">
+                  <p class="page_name">GALLERY</p>
+                </div>
+            </div>
+            <div class="upload_img_cont" (click)="openUploadMenu()">
+                <img src="./assets/icons/upload-16.svg" class="upload_icon" alt="upload_image">
+                <span class="icon_text">UPLOAD</span> 
+            </div>  
+        </div>
+        <div class="search_params_cont">
+    
+            <div class="top_params_cont">
+    
+                <div class="left_side_params">
+                    <p class="params_title">ORDER</p>
+                    <div appClickOutside (clickOutside)="clickedOutsideDropbars('orderDropbar')">
+                        <button (click)="openCloseDropbars('orderDropbar')" class="dropbtn">
+                            <span class="tabs_bar_text">{{currentOrder}}</span> 
+                            <img class="dropdown_img" src='./assets/icons/dropdown.svg' alt="dropdown_image">
+                        </button>
+                        <div #dropdown_order  class="dropdown" *ngIf="isOrderDropdownOpen">
+                            <button (click)="changeOrder('Random')" class="dropdown_btn">Random</button>
+                            <button (click)="changeOrder('Desc')" class="dropdown_btn">Desc</button>
+                            <button (click)="changeOrder('Asc')" class="dropdown_btn">Asc</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="right_side_params">
+                    <p class="params_title">TYPE</p>
+                    <div appClickOutside (clickOutside)="clickedOutsideDropbars('typeDropbar')">
+                        <button (click)="openCloseDropbars('typeDropbar')" class="dropbtn">
+                            <span class="tabs_bar_text">{{currentType}}</span> 
+                            <img class="dropdown_img" src='./assets/icons/dropdown.svg' alt="dropdown_image">
+                        </button>
+                        <div #dropdown_type  class="dropdown" *ngIf="isTypeDropdownOpen">
+                            <button (click)="changeType('All')" class="dropdown_btn">All</button>
+                            <button (click)="changeType('Static')" class="dropdown_btn">Static</button>
+                            <button (click)="changeType('Animated')" class="dropdown_btn">Animated</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_params_cont">
+                <div class="left_side_params">
+                    <p class="params_title">BREED</p>
+                    <div appClickOutside (clickOutside)="clickedOutsideDropbars('breedDropbar')">
+                        <button (click)="openCloseDropbars('breedDropbar')" class="dropbtn">
+                            <span class="tabs_bar_text">{{currentBreed}}</span> 
+                            <img class="dropdown_img" src='./assets/icons/dropdown.svg' alt="dropdown_image">
+                        </button>
+                        <div #dropdown_breed  class="dropdown" *ngIf="isBreedDropdownOpen">
+                            <button (click)="chooseCategory('All breeds')" class="dropdown_btn">All breeds</button>
+                            <ng-container *ngFor="let category of categories">
+                                <button (click)="chooseCategory(category)" class="dropdown_btn">{{category.name}}</button>
+                            </ng-container>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="right_side_params">
+                    <p class="params_title">LIMIT</p>
+                    <div class="right_bottom_block_params">
+                        <div appClickOutside (clickOutside)="clickedOutsideDropbars('limitDropbar')" class="limit_dropdown">
+                            <button (click)="openCloseDropbars('limitDropbar')" class="dropbtn">
+                                <span class="tabs_bar_text">{{currentLimit}} items per page</span> 
+                                <img class="dropdown_img" src='./assets/icons/dropdown.svg' alt="dropdown_image">
+                            </button>
+                            <div #dropdown_limit  class="dropdown" *ngIf="isLimitDropdownOpen">
+                                <button (click)="changeLimit(5)" class="dropdown_btn">5 items per page</button>
+                                <button (click)="changeLimit(10)" class="dropdown_btn">10 items per page</button>
+                                <button (click)="changeLimit(15)" class="dropdown_btn">15 items per page</button>
+                                <button (click)="changeLimit(20)" class="dropdown_btn">20 items per page</button>
+                            </div>
+                        </div>
+                        <div class="reload_data" (click)="searchData()">
+                            <img class="reload_data_btn" src='./assets/icons/update-20.svg' alt="back_image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ng-container *ngIf="loadedData.length > 0;  else downloader">
+            <div class="grid_parent">
+              <div class="grid_container">
+                <ng-container *ngFor="let data of showedData; index as i">
+                    <div class="cat_img_cont {{ get_grid_class(i) }}">
+                        <div class="hover_cont" (mouseenter)="on_hover_enter(data)">
+                            <div class="cat_img_hover"></div>
+                            <div class="unfav_btn_cont" (click)="isBtnReady && favouriteImage(data)">
+                                <ng-container *ngIf="isFavourite;  else not_favourite_img">
+                                    <img class="unfav_btn"  src='./assets/icons/fav-color-30.svg' alt="fav_image">
+                                </ng-container>
+                                <ng-template #not_favourite_img>
+                                    <img class="unfav_btn"  src='./assets/icons/fav-30.svg' alt="unfav_image">
+                                </ng-template>
+                            </div>
+                        </div>
+                        
+                        <app-cat-breed [url]="data.url" class="cat_img"></app-cat-breed>
+                        
+                    </div>
+                </ng-container>
+              </div>
+            </div>
+        </ng-container>
+        <ng-template #downloader>
+            <div class="progress_spinner_cont" *ngIf="(!isEmptyData || isEmptyData === undefined); else alt_headline">
+              <app-progress-spinner></app-progress-spinner>
+            </div>
+        </ng-template>
+    
+        <ng-template #alt_headline>
+            <p class="search_headline">No images found</p>
+        </ng-template>
+    </section>
+</section>
+
+<ng-template #upload_menu>
+    <div class="upload_cont">
+        <div class="close_btn_cont" (click)="closeUploadMenu()">
+            <img class="close_btn"  src='./assets/icons/close-color-20.svg' alt="search_image">
+        </div>
+        <h1 class="main_header">Upload a .jpg or .png Cat Image</h1>
+        <h3 class="additional_header">Any uploads must comply with the 
+            <a class="guidelines_link" href="https://thecatapi.com/privacy">upload guidelines</a> 
+            or face deletion.</h3>
+        
+        <div class="img_cont">
+            <div id="drop_area" (drop)="dropHandler($event);" (dragover)='dragOverHandler($event)' *ngIf="!isFileUploaded && !fileURL; else second_variant">
+                <div class="relative_cont">
+                    <div class="form-group">
+                        <h3 class="upload_image_header">
+                            <label class="upload_link" for="file">Drag here</label>
+                            your file or 
+                            <label class="upload_link" for="file">Click here</label>
+                            to upload</h3>
+                            <input type="file" id="file" (change)="fileInputHandler($event)" style="display: none;">
+                    </div>
+                    <img class="upload_img_logo"  src='./assets/images/upload-img.png' alt="upload_img_logo">
+                </div>
+                <h4 class="file_name_header">No file selected</h4>
+            </div>
+
+            <ng-template #second_variant>
+                <div id="drop_area" (drop)="dropHandler($event);" (dragover)='dragOverHandler($event)' *ngIf="!isFileUploaded && fileURL; else third_variant">
+                    <button (click)="fileInput.click()" class="img_upload_btn">
+                        <img class="uploaded_image" src={{fileURL}} alt="uploading_image">
+                    </button>
+                    <input type="file" id="file" (change)="fileInputHandler($event)" style="display: none;" #fileInput>
+                    <h4 class="file_name_header">Image File Name: {{fileName}}</h4>
+                    <ng-container *ngIf="!isUploading; else uploadingImage">
+                        <ng-container > 
+                            <div class="upload_btn_cont" *ngIf="isReadyToUpload" (click)="onUploadClicked()">
+                                <label class="upload_btn_label">UPLOAD PHOTO</label>
+                            </div>
+                        </ng-container>
+                    </ng-container>
+                    <ng-template #uploadingImage>
+                        <div class="uploading_btn_cont">
+                            <div class="progress_spinner_btn">
+                                <app-progress-spinner></app-progress-spinner>
+                            </div>
+                            <label class="uploading_btn_label">UPLOADING</label>
+                        </div>
+                    </ng-template>
+                </div>
+
+                <ng-template #third_variant>
+                    <div id="drop_area" (drop)="dropHandler($event);" (dragover)='dragOverHandler($event)' *ngIf="isFileUploaded && isCatFound; else fourth_variant">
+                        <div class="relative_cont">
+                            <div class="form-group">
+                                <h3 class="upload_image_header">
+                                    <label class="upload_link" for="file">Drag here</label>
+                                    your file or 
+                                    <label class="upload_link" for="file">Click here</label>
+                                    to upload</h3>
+                                    <input type="file" id="file" (change)="fileInputHandler($event)" style="display: none;">
+                            </div>
+                            <img class="upload_img_logo"  src='./assets/images/upload-img.png' alt="upload_img_logo">
+                        </div>
+                        <h4 class="file_name_header">No file selected</h4>
+                    </div>
+
+                    <ng-template #fourth_variant>
+                        <div id="drop_area" (drop)="dropHandler($event);" (dragover)='dragOverHandler($event)' *ngIf="isFileUploaded && !isCatFound">
+                            <button (click)="fileInput.click()" class="img_upload_btn unsuccess_upload">
+                                <img class="uploaded_image" src={{fileURL}} alt="uploading_image">
+                            </button>
+                            <input type="file" id="file" (change)="fileInputHandler($event)" style="display: none;" #fileInput>
+                            <h4 class="file_name_header">Image File Name: {{fileName}}</h4>
+                        </div>
+                    </ng-template>
+                </ng-template>
+            </ng-template>
+        </div>
+        
+        <div class="logs" *ngIf="!isReadyToUpload && !isUploading">
+            <ng-container *ngFor='let log of logs.reverse()'>
+                <div class="new_log" *ngIf="log.success; else unsuccess">
+                    <img class="log_img"  src='./assets/icons/cat-found-20.svg' alt="success_img">
+                    <p class="log_msg">Thanks for the Upload - Cat found!</p>
+                </div>
+                <ng-template #unsuccess>
+                    <div class="new_log">
+                        <img class="log_img"  src='./assets/icons/no-cat-found-20.svg' alt="unsuccess_img">
+                        <p class="log_msg">No Cat found - try a different one</p>
+                    </div>
+                </ng-template>
+            </ng-container> 
+        </div>
+    </div>
+</ng-template>

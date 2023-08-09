@@ -1,0 +1,21 @@
+.app {
+    /* width: 100%;
+    height: 100%; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sidebar_menu {
+    /* width: 100%; */
+    padding-top: 38px;
+    padding-left: 121px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.content {
+    padding: 30px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+

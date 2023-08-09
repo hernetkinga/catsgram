@@ -1,0 +1,54 @@
+<app-topbar></app-topbar>
+<section class="info_sect">
+
+    <div class="tabs_bar">
+        <app-back-nav-btn></app-back-nav-btn>
+        <div class="page_name_cont">
+          <p class="page_name">BREEDS</p>
+        </div>
+        <div class="breed_id_cont" *ngIf="breedImgsURLs.length > 0">
+            <p class="breed_id">{{breedID.toUpperCase()}}</p>
+        </div>
+    </div>
+
+    <div class="breed_content" *ngIf="breedImgsURLs.length > 0;  else noData">
+        <div class="info_img_cont">
+            <carousel class="carousel" cellWidth='100%' [height]=460 [borderRadius]=20
+                [images]="breedImgsURLs">
+            </carousel>
+        </div>
+
+        <div class="info_cont">
+            <div class="name_cont" >
+                <p class="breed_name">{{breedInfo.name}}</p>
+            </div>
+            <p class="breed_description">{{breedInfo.description}}</p>
+            <div class="breed_info">
+                <div class="temperament_cont">
+                    <p class="info_label">Temperament:</p>
+                    <p class="info_value">{{breedInfo.temperament}}</p>
+                </div>
+                <div class="other_info_cont">
+                    <p class="info_label">Origin:
+                        <span class="info_value">{{breedInfo.origin}}</span>
+                    </p>
+                    <p class="info_label">Weight:
+                        <span class="info_value">{{breedInfo.weight.metric}} kgs</span>
+                    </p>
+                    <p class="info_label">Life span:
+                        <span class="info_value">{{breedInfo.life_span}} years</span>
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <ng-template #noData>
+        <div class="no_items_headline">
+            <p class="no_items_headline_text">No item selected</p>
+        </div>
+    </ng-template>
+
+    
+

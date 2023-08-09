@@ -1,0 +1,45 @@
+<app-topbar [searchWord]="searchWord"></app-topbar>
+<section class="search_sect">
+    <div class="tabs_bar">
+        <app-back-nav-btn></app-back-nav-btn>
+        <div class="page_name_cont">
+          <p class="page_name">SEARCH</p>
+        </div>
+    </div>
+
+      <ng-template [ngIf]="searchWord" [ngIfElse]="alt_headline">
+        <p class="search_headline">Search result for: <b style="color: #1D1D1D">{{searchWord}}</b></p>
+
+          <ng-container *ngIf="loadedData.length > 0;  else downloader">
+            <div class="grid_parent">
+              <div class="grid_container">
+                <ng-container *ngFor="let data of loadedData; index as i">
+                  <div class="cat_img_cont {{ get_grid_class(i) }}">
+                    <div class="hover_cont">
+                        <div class="cat_img_hover"></div>
+                        <div class="breed_name">
+                            <p class="breed_text">{{data.breeds[0].name}}</p>
+                        </div>
+                      </div>
+                    <app-cat-breed [url]="data.url" class="cat_img"></app-cat-breed>
+                  </div>
+                </ng-container>
+              </div>
+            </div>
+          </ng-container>
+
+    </ng-template>
+
+    <ng-template #downloader>
+      <ng-container *ngIf="!isEmptyData; else alt_headline">
+        <div class="progress_spinner_cont">
+          <app-progress-spinner></app-progress-spinner>
+        </div>
+      </ng-container>
+    </ng-template>
+    
+    <ng-template #alt_headline>
+        <p class="search_headline">No search term found.</p>
+    </ng-template>
+</section>
+

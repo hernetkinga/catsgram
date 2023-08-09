@@ -1,0 +1,40 @@
+<app-topbar></app-topbar>
+<section class="likes_sect">
+    <div class="tabs_bar">
+        <app-back-nav-btn></app-back-nav-btn>
+        <div class="page_name_cont">
+          <p class="page_name">LIKES</p>
+        </div>
+    </div>
+    <ng-container *ngIf="loadedData.length > 0;  else noItems">
+        <div class="grid_parent">
+          <div class="grid_container">
+            <ng-container *ngFor="let data of loadedData; index as i">
+                <div class="cat_img_cont {{ get_grid_class(i) }}">
+                    <div class="cat_img_hover"></div>
+                    <div class="like_btn_cont" (click)="removeFromLikes(data)">
+                        <img class="like_btn"  src='./assets/icons/like-30.svg' alt="search_image">
+                        <img class="like_btn_hover"  src='./assets/icons/close-white-20.svg' alt="search_image">  
+                    </div> 
+                    <app-cat-breed [url]="data.image.url" class="cat_img"></app-cat-breed>
+                </div>
+            </ng-container>
+          </div>
+        </div>
+    </ng-container>
+    <ng-template #noItems>
+        <div class="no_items_headline">
+            <p class="no_items_headline_text">No item found</p>
+        </div>
+    </ng-template>
+
+    <div class="logs">
+        <ng-container *ngFor='let log of logs'>
+            <div class="new_log">
+                <div class="time_cont">
+                    <p class="time">{{log.currentTime}}</p>
+                </div>
+                <p class="log_msg">Image ID: <b style="color: #1D1D1D;">{{log.imageID}}</b> was {{log.action}} {{log.place}}</p>
+            </div>
+        </ng-container> 
+    </div>

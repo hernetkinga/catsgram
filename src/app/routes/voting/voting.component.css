@@ -1,0 +1,181 @@
+.vote_sect {
+    height: 100%;
+    margin-top: 10px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.tabs_bar {
+    display:flex;
+}
+
+.page_name_cont {
+    width: 156px;
+    height: 40px;
+    background: #FF868E;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.page_name {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    margin: 5px 30px;
+}
+
+.vote_img_cont {
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 100%;
+    height: 460px;
+    position: relative;
+}
+
+.voting_btns {
+    width: 248px;
+    height: 80px;
+    background: #FFFFFF;
+    border: 4px solid #FFFFFF;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -40px;
+    z-index: 1;
+    display:flex;
+    box-sizing: content-box;
+}
+
+.like_cont {
+    width: 80px;
+    height: 80px;
+    background-color: #97EAB9;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.like_cont:hover {
+    background: rgba(151, 234, 185, 0.3);
+}
+
+.like_cont:hover .like_btn {
+    filter: brightness(0) saturate(100%) invert(83%) sepia(34%) saturate(360%) hue-rotate(88deg) brightness(99%) contrast(88%);
+}
+
+.like_btn {
+    margin: 25px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1693%) hue-rotate(205deg) brightness(123%) contrast(109%);
+}
+
+.fav_cont {
+    width: 80px;
+    height: 80px;
+    background-color: #FF868E;
+    margin-left: 4px;
+}
+
+.fav_cont:hover {
+    background: rgba(255, 134, 142, 0.3);
+}
+
+.fav_cont:hover .fav_btn {
+    filter: brightness(0) saturate(100%) invert(63%) sepia(52%) saturate(1413%) hue-rotate(308deg) brightness(109%) contrast(99%);
+}
+
+.fav_btn {
+    margin: 27px 25px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1693%) hue-rotate(205deg) brightness(123%) contrast(109%);
+}
+
+.fav_btn_active {
+    width: 30px;
+    height: 30px;
+    margin: 27px 25px;
+}
+
+
+.dislike_cont {
+    width: 80px;
+    height: 80px;
+    background-color: #FFD280;
+    margin-left: 4px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.dislike_cont:hover {
+    background: rgba(255, 210, 128, 0.3);
+}
+
+.dislike_cont:hover .dislike_btn {
+    filter: brightness(0) saturate(100%) invert(82%) sepia(32%) saturate(687%) hue-rotate(336deg) brightness(104%) contrast(101%);
+}
+
+.dislike_btn {
+    margin: 25px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1693%) hue-rotate(205deg) brightness(123%) contrast(109%);
+}
+
+.logs {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+}
+
+.new_log {
+    width: 100%;
+    height: 60px;
+    background: #F8F8F7;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.time_cont {
+    width: max-content;
+    height: 30px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+.time {
+    width: max-content;
+    color: #1D1D1D;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    margin: 3px 10px;
+}
+
+.log_msg {
+    margin-left: 30px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    width: max-content;
+    height: 24px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8C8C8C;
+}
+
+.progress_spinner_cont {
+    padding-top: 20%;
+    padding-left: 45%;
+}
+
