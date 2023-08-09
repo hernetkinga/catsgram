@@ -23,8 +23,8 @@ Developed during the last week of the BooleanUK bootcamp.
 - API from https://developers.thecatapi.com/
 - Icons and pics are from [Iconscout](https://iconscout.com/3ds)
 
-## User Stories
-# Voting
+# User Stories
+## Voting
 
 ```
 1. As a user,  
@@ -49,7 +49,7 @@ Developed during the last week of the BooleanUK bootcamp.
    I want to log my actions (likes, dislikes, favourites)
 ```
 
-# Breeds
+## Breeds
 ```
 1. As a user,  
    I want a button to reload the available breeds data,  
@@ -71,7 +71,7 @@ Developed during the last week of the BooleanUK bootcamp.
    So that I can easily find a breed by its name.
 ```
 
-# Gallery
+## Gallery
 ```
 1. As a user,  
    I want all functionalities from the "Breeds" component available in the "Gallery" component,  
