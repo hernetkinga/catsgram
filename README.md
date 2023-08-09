@@ -69,7 +69,7 @@ Developed during the last week of the BooleanUK bootcamp.
 4. As a user,  
    I want to sort cat breeds in alphabetical order,  
    So that I can easily find a breed by its name.
-``'
+```
 
 # Gallery
 ```
