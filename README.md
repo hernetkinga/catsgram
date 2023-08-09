@@ -23,6 +23,13 @@ Developed during the last week of the BooleanUK bootcamp.
 - API from https://developers.thecatapi.com/
 - Icons and pics are from [Iconscout](https://iconscout.com/3ds)
 
+## Class Diagram
+
+I generated class diagram using VSCode Extension called "classdiagram-ts"
+![src_diagram](https://github.com/hernetkinga/catsgram/assets/73906851/b51baa89-28d8-489b-be9c-0b16cb09d0ce)
+
+
+
 # User Stories
 ## Voting
 
