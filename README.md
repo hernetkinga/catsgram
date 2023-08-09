@@ -17,16 +17,30 @@ Developed during the last week of the BooleanUK bootcamp.
 ## Tech Stack
 
 - HTML, CSS, and JavaScript
+- Node.js & npm
+- Angular CLI
 - [Bootstrap](https://getbootstrap.com/) for responsive design.
 - API from https://developers.thecatapi.com/
 - Icons and pics are from [Iconscout](https://iconscout.com/3ds)
 
-## Getting Started
+## User Stories
 
-### Prerequisites
+```
+# Voting
+1.  **User Likes**:  
+   As a user,  
+   I want to like images or content,  
+   So that I can show appreciation for what I enjoy.
+```
+---
+```
+2.  **User Favourites**:  
+   As a user,  
+   I want to add images or content to my favourites,  
+   So that I can easily revisit them later.
+```
+---
 
-- Node.js & npm
-- Angular CLI
-  
+
 License
 This project is open source and available under the MIT License.
