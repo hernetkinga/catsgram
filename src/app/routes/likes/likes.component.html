@@ -27,14 +27,3 @@
             <p class="no_items_headline_text">No item found</p>
         </div>
     </ng-template>
-
-    <div class="logs">
-        <ng-container *ngFor='let log of logs'>
-            <div class="new_log">
-                <div class="time_cont">
-                    <p class="time">{{log.currentTime}}</p>
-                </div>
-                <p class="log_msg">Image ID: <b style="color: #1D1D1D;">{{log.imageID}}</b> was {{log.action}} {{log.place}}</p>
-            </div>
-        </ng-container> 
-    </div>
