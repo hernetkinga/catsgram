@@ -19,7 +19,7 @@ Developed during the last week of the BooleanUK bootcamp.
 - HTML, CSS, and JavaScript
 - [Bootstrap](https://getbootstrap.com/) for responsive design.
 - API from https://developers.thecatapi.com/
-- icons and pics are from https://iconscout.com/3ds/female-fall-down
+- Icons and pics are from [Iconscout](https://iconscout.com/3ds)
 
 ## Getting Started
 
