@@ -1,10 +1,5 @@
 <div class="top_bar">
-  <form class="search_bar" (submit)="submit()">
-      <input class='search_field' name="search" type="text" placeholder="Search for breeds by name" maxlength="50" [(ngModel)]="searchWord">
-      <div class="search_btn_container" (click)="submit()">
-        <img class="search_btn" (click)="submit()" src='./assets/icons/search-20.svg' alt="search_image">
-      </div>
-  </form>
+  
   <ul class="top_bar_btns">
     <li class="btn_container" routerLink="/likes" routerLinkActive="btn_active">
       <img class="top_bar_btn" routerLink="/likes" src='./assets/icons/like-30.svg' alt="likes_image">
