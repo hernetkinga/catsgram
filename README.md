@@ -56,47 +56,41 @@ Developed during the last week of the BooleanUK bootcamp.
    I want a button to reload the available breeds data,  
    So that I can see updated information without refreshing the entire page.
 ```
----
+
 ```
 2. As a user,  
    I want to categorize images or content by specific cat breeds,  
    So that I can easily find the type of cats I'm interested in.
 ```
----
+
 ```
 3. As a user,  
    I want to adjust the number of breed items displayed per page,  
    So that I can navigate through the content based on my preference.
 ```
----
+
 ```
 4. As a user,  
    I want to sort cat breeds in alphabetical order,  
    So that I can easily find a breed by its name.
-```
+``'
 # Gallery
 ```
 1. As a user,  
    I want all functionalities from the "Breeds" component available in the "Gallery" component,  
    So that I can filter, sort, and view images based on breeds within the gallery.
 ```
----
+
 ```
 2. As a user,  
    I want to sort images in the gallery based on their type (static or animated),  
    So that I can view content that matches my mood or preference.
 ```
----
+
 ```
 3. As a user,  
    I want to drag and drop images to upload them to the gallery,  
    So that I can conveniently share my cat images without the hassle of traditional file pickers.
-```
----
-```
-4. As a system administrator,  
-   I want to log user actions within the gallery (like uploads, filters, sorting, etc.),  
-   So that I can monitor and analyze user interactions, improving the gallery experience based on user behavior.
 ```
 
 License
