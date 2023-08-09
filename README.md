@@ -26,9 +26,7 @@ Developed during the last week of the BooleanUK bootcamp.
 ## Class Diagram
 
 I generated class diagram using VSCode Extension called "classdiagram-ts"
-![src_diagram](https://github.com/hernetkinga/catsgram/assets/73906851/b51baa89-28d8-489b-be9c-0b16cb09d0ce)
-
-
+![diagramik](https://github.com/hernetkinga/catsgram/assets/73906851/b8bacb29-b477-4085-958d-71ba5d039493)
 
 # User Stories
 ## Voting
