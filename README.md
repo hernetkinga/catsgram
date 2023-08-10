@@ -2,17 +2,13 @@
 
 Welcome to **Catsgram** - where every day is Caturday! It's like Instagram, but exclusively for our feline friends.
 
+![stronkafinal](https://github.com/hernetkinga/catsgram/assets/73906851/7e749cef-efb4-4c67-b368-641bc0e6f6e5)
+
+
 ## About Catsgram
 
 Catsgram is a platform designed for all cat enthusiasts around the world. 
 Developed during the last week of the BooleanUK bootcamp.
-
-## Features
-
-- **Rich Gallery**: Explore high-quality images of various animals.
-- **Animal Profiles**: Get to know more about each pet with dedicated profiles.
-- **Responsive Design**: Enjoy PetsPaw on both desktop and mobile devices.
-- **Interactive UI**: Smooth transitions, intuitive navigation, and a user-friendly interface.
 
 ## Tech Stack
 
@@ -25,7 +21,7 @@ Developed during the last week of the BooleanUK bootcamp.
 
 ## Class Diagram
 
-I generated class diagram using VSCode Extension called "classdiagram-ts"
+Generated with the VSCode Extension "classdiagram-ts".
 ![diagramik](https://github.com/hernetkinga/catsgram/assets/73906851/b8bacb29-b477-4085-958d-71ba5d039493)
 
 # User Stories
@@ -92,6 +88,12 @@ I generated class diagram using VSCode Extension called "classdiagram-ts"
    I want to drag and drop images to upload them to the gallery,  
    So that I can conveniently share my cat images without the hassle of traditional file pickers.
 ```
+## Features
 
-License
+- **Rich Gallery**: Explore high-quality images of various animals.
+- **Animal Profiles**: Get to know more about each pet with dedicated profiles.
+- **Responsive Design**: Enjoy PetsPaw on both desktop and mobile devices.
+- **Interactive UI**: Smooth transitions, intuitive navigation, and a user-friendly interface.
+
+## License
 This project is open source and available under the MIT License.
