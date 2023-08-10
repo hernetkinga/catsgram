@@ -5,9 +5,6 @@ import { ShareRouteDataService } from '../../services/share-route-data.service';
 import { Breeds } from '../../api/models/breeds.model';
 import { Category } from '../../api/models/category.model';
 
-
-
-
 @Component({
   selector: 'app-breeds',
   templateUrl: './breeds.component.html',

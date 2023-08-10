@@ -94,11 +94,11 @@
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1693%) hue-rotate(205deg) brightness(123%) contrast(109%);
 }
 
-/* .fav_btn_active {
+.fav_btn_active {
     width: 30px;
     height: 30px;
     margin: 27px 25px;
-} */
+} 
 
 
 .dislike_cont {

@@ -69,14 +69,6 @@
     filter:  brightness(0) saturate(100%) invert(67%) sepia(0%) saturate(1%) hue-rotate(168deg) brightness(84%) contrast(84%)
 }
 
-.reload_data:hover {
-    border: 2px solid #FBE0DC;
-}
-
-.reload_data:hover > .reload_data_btn {
-    filter: brightness(0) saturate(100%) invert(61%) sepia(15%) saturate(1491%) hue-rotate(307deg) brightness(101%) contrast(100%);
-}
-
 .dropdown_breeds_block {
     margin-left: 10px;
     width: 40%;
@@ -93,10 +85,6 @@
     display:flex;
     justify-content: space-between;
     border: 2px solid transparent;
-}
-
-.dropbtn_breeds:hover {
-    border: 2px solid #FBE0DC;
 }
 
 .dropdown_breeds {
@@ -125,10 +113,6 @@
     border: none;
 }
 
-.breed_btn:hover {
-    color: #FF868E;
-}
-
 .grid_parent {
     overflow: hidden;
     margin-top: 20px;
@@ -154,14 +138,6 @@
     height: 20px;
 }
 
-.descending_sort:hover {
-    border: 2px solid #FBE0DC;
-}
-
-.descending_sort:hover > .desc_sort_btn {
-    filter: brightness(0) saturate(100%) invert(61%) sepia(15%) saturate(1491%) hue-rotate(307deg) brightness(101%) contrast(100%);
-}
-
 .ascending_sort {
     width: auto;
     height: 40px;
@@ -176,15 +152,6 @@
     width: 20px;
     height: 20px;
 }
-
-.ascending_sort:hover {
-    border: 2px solid #FBE0DC;
-}
-
-.ascending_sort:hover > .asc_sort_btn {
-    filter: brightness(0) saturate(100%) invert(61%) sepia(15%) saturate(1491%) hue-rotate(307deg) brightness(101%) contrast(100%);
-}
-
 
 .cat_img_cont {
     position: relative;

@@ -12,9 +12,6 @@ import { Vote } from '../models/vote.model'
 import { ImageAnalysis } from '../models/image-analysis.model';
 import { UploadedImage } from '../models/uploaded-image.model';
 
-
-
-
 @Injectable({
   providedIn: 'root'
 })

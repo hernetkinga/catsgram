@@ -9,7 +9,7 @@
     font-family: 'Jost';
     font-style: normal;
     font-weight: 500;
-    font-size: 44px;
+    font-size:70px;
     line-height: 58px;
     color: #1D1D1D;
     margin-top: 80px; 
@@ -20,7 +20,7 @@
     font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 29px;
     color: #1D1D1D;
     margin-top: 10px;
@@ -101,7 +101,7 @@
     font-family: 'Jost';
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 20px;
     letter-spacing: 1px;
     color: #1D1D1D
 }
