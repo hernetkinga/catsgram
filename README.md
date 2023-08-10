@@ -2,7 +2,7 @@
 
 Welcome to **Catsgram** - where every day is Caturday! It's like Instagram, but exclusively for our feline friends.
 
-![stronkafinal](https://github.com/hernetkinga/catsgram/assets/73906851/7e749cef-efb4-4c67-b368-641bc0e6f6e5)
+![stronka](https://github.com/hernetkinga/catsgram/assets/73906851/4b0912bc-1c59-4558-9efe-9317b8b93416)
 
 
 ## About Catsgram
