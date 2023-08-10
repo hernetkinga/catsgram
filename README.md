@@ -91,5 +91,3 @@ Generated with the VSCode Extension "classdiagram-ts".
 ## Challenges
 During the development of Catsgram, challenges were overcome in integrating The Cat API effectively, ensuring secure handling of user data, and designing an intuitive user interface.
 
-## License
-This project is open source and available under the MIT License.
