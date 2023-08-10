@@ -1,7 +1,7 @@
 .info_sect {
     height: max-content;
     margin-top: 10px;
-    background: #FFFFFF;
+    background: #97EAB9;
     border-radius: 20px;
     padding: 20px;
 }
@@ -33,7 +33,7 @@
 .breed_id_cont {
     width: max-content;
     height: 40px;
-    background: #FF868E;
+    background: #c9a7c6;
     border-radius: 10px;
     margin-left: 10px;
 }
@@ -106,7 +106,7 @@
     font-weight: 500;
     font-size: 17px;
     line-height: 29px;
-    color: #8C8C8C;
+    color: #1D1D1D;
 }
 
 .breed_info {
@@ -134,7 +134,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 23px;
-    color: #8C8C8C;
+    color: #1D1D1D;
     margin: 0;
 }
 

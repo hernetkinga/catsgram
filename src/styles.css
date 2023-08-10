@@ -1,7 +1,7 @@
 @import '~normalize.css';
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css"; 
 
-html { background-color: #E5E5E5; }
+html { background-color: #c9a7c6; }
 
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 

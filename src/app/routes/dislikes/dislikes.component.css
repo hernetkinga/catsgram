@@ -1,7 +1,7 @@
 .dislikes_sect {
     height: 100%;
     margin-top: 10px;
-    background: #FFFFFF;
+    background: #ddcecf;
     border-radius: 20px;
     padding: 20px;
 }
@@ -13,7 +13,7 @@
 .page_name_cont {
     width: auto;
     height: 40px;
-    background: #FF868E;
+    background: #c9a7c6;
     border-radius: 10px;
     margin-left: 10px;
 }

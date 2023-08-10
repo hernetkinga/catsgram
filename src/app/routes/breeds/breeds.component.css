@@ -1,7 +1,7 @@
 .breeds_sect {
     height: auto;
     margin-top: 10px;
-    background: #FFFFFF;
+    background: #97EAB9;
     border-radius: 20px;
     padding: 20px;
 }
@@ -36,7 +36,7 @@
 .page_name_cont {
     width: 156px;
     height: 40px;
-    background: #FF868E;
+    background: #c9a7c6;
     border-radius: 10px;
     margin-left: 10px;
 }
@@ -86,7 +86,7 @@
 
 .dropdown_limit_block {
     margin-left: 10px;
-    width: 156px;
+    width: 1px;
     height: 42px;
 }
 
@@ -272,7 +272,7 @@
 }
 
 .breed_name:hover {
-    border: 2px solid #FF868E;
+    border: 2px solid #97EAB9;
 }
 
 
