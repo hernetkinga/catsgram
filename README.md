@@ -88,12 +88,8 @@ Generated with the VSCode Extension "classdiagram-ts".
    I want to drag and drop images to upload them to the gallery,  
    So that I can conveniently share my cat images without the hassle of traditional file pickers.
 ```
-## Features
-
-- **Rich Gallery**: Explore high-quality images of various animals.
-- **Animal Profiles**: Get to know more about each pet with dedicated profiles.
-- **Responsive Design**: Enjoy PetsPaw on both desktop and mobile devices.
-- **Interactive UI**: Smooth transitions, intuitive navigation, and a user-friendly interface.
+## Challenges
+During the development of Catsgram, challenges were overcome in integrating The Cat API effectively, ensuring secure handling of user data, and designing an intuitive user interface.
 
 ## License
 This project is open source and available under the MIT License.
