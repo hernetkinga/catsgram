@@ -39,10 +39,7 @@ export class BreedsComponent implements OnInit {
   
   @ViewChild('dropdown_breeds') dropdown_breeds!: ElementRef;
 
-  @ViewChild('dropdown_limit') dropdown_limit!: ElementRef;
-
   public searchData(): void {
-    // To show progressSpinner - loadedData must be empty
     if (this.loadedData) {
       this.loadedData = [];
     }
@@ -89,29 +86,17 @@ export class BreedsComponent implements OnInit {
     this.searchData();
   }
 
-  public filterByLimits(limit: number): void {
-    this.imgsLimit = limit;
-    this.openCloseDropbars('limitDropbar')
-    this.showData();
-  }
-  // share specific cat data to 'Info' route
   public shareData(catData: Breeds) {
     this.shareDataService.data.push(catData);
   }
 
   public openCloseDropbars(dropbar: string): void {
-    if (dropbar == 'limitDropbar') {
-      this.isLimitDropdownOpen = !this.isLimitDropdownOpen;
-    }
     if (dropbar == 'categoriesDropbar') {
       this.isCategoriesDropdownOpen = !this.isCategoriesDropdownOpen;
     }
   }
 
   public clickedOutsideDropbars(dropbar: string): void {
-    if (dropbar == 'limitDropbar') {
-      this.isLimitDropdownOpen = false;
-    }
     if (dropbar == 'categoriesDropbar') {
       this.isCategoriesDropdownOpen = false;
     }
@@ -130,7 +115,6 @@ export class BreedsComponent implements OnInit {
     }
   }
 
-    // toDo move get_grid_class to grid-container component and then import where it needed to
     public get_grid_class(index: number): string {
       const pattern = [
         'one', 'two', 'three', 'four', 'five',

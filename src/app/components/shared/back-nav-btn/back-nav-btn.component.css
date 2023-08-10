@@ -10,11 +10,3 @@
     width: 20px;
     height: 20px;
 }
-
-.back_btn_container:hover {
-    background: #FF868E;
-}
-
-.back_btn_container:hover > .back_btn {
-    filter: brightness(0) saturate(100%) invert(97%) sepia(97%)  hue-rotate(225deg) contrast(104%) saturate(14%) brightness(104%);
-  }

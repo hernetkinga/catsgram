@@ -65,13 +65,11 @@ export class GalleryComponent implements OnInit {
   }
 
   public createSubID(): void {
-    // sub_id can be any value. Its static and didn`t change with new session
     this.persister.set('sub_id', 'id369432');
     this.subID = this.persister.get('sub_id');
   };
 
   public searchData(): void {
-    // To show progressSpinner - loadedData must be empty
     if (this.loadedData) {
       this.loadedData = [];
     }
@@ -213,12 +211,6 @@ export class GalleryComponent implements OnInit {
     }
     this.isBreedDropdownOpen = false;
     this.searchData();
-  }
-
-  public changeLimit(newLimit: number): void {
-    this.currentLimit = newLimit;
-    this.showData();
-    this.isLimitDropdownOpen = false;
   }
 
   public on_hover_enter(img_data: Breeds) {
@@ -377,7 +369,6 @@ export class GalleryComponent implements OnInit {
     this.logs.push(newLog)
   }; 
 
-  // toDo move get_grid_class to grid-container component and then import where it needed to
   public get_grid_class(index: number): string {
     const pattern = [
       'one', 'two', 'three', 'four', 'five',

@@ -106,31 +106,5 @@
     color: #1D1D1D
 }
 
-.sidebar_btn_container:hover > .sidebar_image_container {
-    border: 4px solid #FFFFFF;
-}
-
-.sidebar_btn_container:hover > .sidebar_label_container {
-    background: #FBE0DC;
-}
-
-.active_link .sidebar_label_container {
-    background: #FF868E;
-    color: #FFFFFF;
- }
-
- .active_link .sidebar_image_container {
-    border: 4px solid #FBE0DC;
- }
-
- .active_link:hover .sidebar_label_container {
-    background: #FF868E;
-    color: #FFFFFF;
- }
-
- .active_link:hover .sidebar_image_container {
-    border: 4px solid #FBE0DC;
- }
-
 
 

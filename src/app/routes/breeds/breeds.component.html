@@ -20,23 +20,6 @@
                 </ng-container>
             </div>
         </div>
-        <div class="dropdown_limit_block" appClickOutside (clickOutside)="clickedOutsideDropbars('limitDropbar')">
-            <button (click)="openCloseDropbars('limitDropbar')" class="dropbtn_limit">
-                <ng-container *ngIf="loadedData.length > 0; else alt_limit_counter">
-                    <span class="tabs_bar_text">Limit: {{showedData.length}}</span> 
-                    <img class="dropdown_img" src='./assets/icons/dropdown.svg' alt="dropdown_image">
-                </ng-container>
-                <ng-template #alt_limit_counter>
-                    <span class="tabs_bar_text">Limit: </span> 
-                </ng-template>
-            </button>
-            <div #dropdown_limit  class="dropdown_limit" *ngIf="isLimitDropdownOpen">
-                <button (click)="filterByLimits(5)" class="limit_btn">5 items per page</button>
-                <button (click)="filterByLimits(10)" class="limit_btn">10 items per page</button>
-                <button (click)="filterByLimits(15)" class="limit_btn">15 items per page</button>
-                <button (click)="filterByLimits(20)" class="limit_btn">20 items per page</button>
-            </div>
-        </div>
         <div class="descending_sort" (click)="sort('descending')">
             <img class="desc_sort_btn" src='./assets/icons/sort-20.svg' alt="back_image">
         </div>

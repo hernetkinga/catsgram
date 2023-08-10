@@ -83,14 +83,6 @@
     height: 42px;
 }
 
-
-.dropdown_limit_block {
-    margin-left: 10px;
-    width: 1px;
-    height: 42px;
-}
-
-
 .dropbtn_breeds {
     width: 100%;
     height: 100%;
@@ -104,21 +96,6 @@
 }
 
 .dropbtn_breeds:hover {
-    border: 2px solid #FBE0DC;
-}
-
-.dropbtn_limit {
-    width: 100%;
-    height: 100%;
-    background: #F8F8F7;
-    border-radius: 10px;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    border: 2px solid transparent;
-}
-
-.dropbtn_limit:hover {
     border: 2px solid #FBE0DC;
 }
 
@@ -137,21 +114,6 @@
     margin-top: 7px;
 }
 
-.dropdown_limit {
-    width: max-content;
-    height: max-content;
-    display: block;
-    position: absolute;
-    background-color: #f1f1f1;
-    width: max-content;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    border-radius: 20px;
-    padding: 10px 10px 0 10px;
-    margin-top: 7px;
-}
-
 .breed_btn {
     display: block;
     font-family: 'Jost';
@@ -164,22 +126,6 @@
 }
 
 .breed_btn:hover {
-    color: #FF868E;
-}
-
-.limit_btn {
-    display: block;
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #8C8C8C;
-    border: none;
-    margin-bottom: 10px;
-}
-
-.limit_btn:hover {
     color: #FF868E;
 }
 

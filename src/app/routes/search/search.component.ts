@@ -35,7 +35,6 @@ export class SearchComponent implements OnInit {
       this.loadedData = [];
     }
 
-    // TODO observables pipe
     this.service.searchBreedByName(this.searchWord).subscribe((breedByName) => {
       if (breedByName.length > 0) {
         this.breedId = breedByName[0].id;

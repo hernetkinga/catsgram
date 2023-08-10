@@ -35,7 +35,6 @@ export class VotingComponent implements OnInit {
   ngOnInit(): void { }
   
   public createSubID(): void {
-    // sub_id can be any value. Its static and didn`t change with new session
     this.persister.set('sub_id', 'id369432');
     this.subID = this.persister.get('sub_id');
   };

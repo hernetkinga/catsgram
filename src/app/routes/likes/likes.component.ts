@@ -63,8 +63,6 @@ export class LikesComponent implements OnInit {
     this.logs.push(log);
   };
 
-
-    // toDo move get_grid_class to grid-container component and then import where it needed to
     public get_grid_class(index: number): string {
       const pattern = [
         'one', 'two', 'three', 'four', 'five',

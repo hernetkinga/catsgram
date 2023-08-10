@@ -112,9 +112,9 @@
     display: flex;
 }
 
-.limit_dropdown {
+/* .limit_dropdown {
     width: calc(100% - 50px);
-}
+} */
 
 .params_title {
     margin-top: 0;
